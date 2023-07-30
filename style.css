@@ -13,6 +13,9 @@ body {
   min-height: 100vh;
   background: #E3F2FD;
 }
+
+
+
 .wrapper {
   width: 65vmin;
   height: 70vmin;
@@ -41,6 +44,7 @@ body {
 }
 .play-board .food {
   background: #FF003D;
+  border-radius: 50%;
 }
 .play-board .head {
   background: #60CBFF;
