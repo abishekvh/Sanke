@@ -48,6 +48,7 @@ body {
 }
 .play-board .head {
   background: #60CBFF;
+  
 }
 
 .controls {
@@ -63,6 +64,29 @@ body {
   cursor: pointer;
   border-right: 1px solid #171B26;
 }
+
+.snakefy:hover {
+  color: rgba(255, 255, 255, 0.1);
+  transition-delay: 0.5s;
+}
+
+.snakefy::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.35rem;
+  color: #d83bff;
+  text-shadow: 0 0 10px #d83bff, 0 0 30px #d83bff, 0 0 80px #d83bff;
+  font-weight: 500;
+  letter-spacing: 40px;
+  white-space: nowrap;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
 
 @media screen and (max-width: 800px) {
   .wrapper {
